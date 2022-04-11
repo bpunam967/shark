@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            background-color: #eee;
+            box-shadow: 1px 1px 1px black;
+            margin: 0 auto;
+            width: 250px;
+            padding: 30px;
+        }
+        input{
+            padding: 3px;
+        }
+    </style>
+
+</head>
+<body>
+    <form onsubmit="return validForm()">
+    <label for="email">Email or Username</label><br>
+    <input type="text" name="email" id="email" onkeyup="emailValidation()"><br>
+    <span id="emailMsg"></span><br><br>
+    <label for="password">password</label><br>
+    <input type="text" name="password" id="password" onkeyup="passwordValidation()"><br>
+    <span id="passwordMsg"></span><br><br>
+    <input type="submit" value="Sign in">
+</form>
+<script src="./nre.js"></script>
+    
+</body>
+</html>

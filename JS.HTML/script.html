@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Amazon form</title>
+    <style>
+        .box img{
+            height: 70px;
+            width: 120px;
+            margin: 5px 290px 0px;
+        }
+        form{
+            background-color: rgb(243, 247, 247);
+            font-size: 20px;
+            margin:15px 290px 150px ;
+            width: 250px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="box">
+    <img src="../alogo.jpg" alt="">
+</div>
+<form onsubmit="return validForm()">
+    <p>Create account</p>
+    <label for="fullname">Your name</label><br>
+    <input type="text" name="yname" id="yname" onkeyup="yNameValidation()"><br>
+    <span id="ynameMsg"></span><br>
+    <label for="email">Mobile number or email</label><br>
+    <input type="email" name="email" id="email" onkeyup="emailValidation()"><br>
+    <span id="emailMsge"></span><br>
+    <label for="password">Password</label><br>
+    <input type="password" name="password" id="password" placeholder="atleast 6 characters" onkeyup="passwordValidation()"><br>
+    <span id="passwordMsg"></span><br>
+    <label for="rePassword"> Re-enter password</label><br>
+    <input type="password" name="rePassword" id="rePassword" onkeyup="repasswordValidation()"><br>
+    <span id="rePasswordMsg"></span><br>
+    <input type="submit" value="continue">
+
+</form>
+
+<script src="script.js"></script>
+
+    
+</body>
+</html>

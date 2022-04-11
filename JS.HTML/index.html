@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+      //  let number=Math.random()
+      //  document.write(number)
+      let today = new Date 
+      document.write( today +'<br>')
+
+
+
+
+// function demo (qty, rate, tax , total){
+  // return`${qty*rate}`
+// }
+//  document.write(demo(4,500)`<br>`)
+
+//  let demo=()=>{
+  //  return"Javascript fat arrow"
+
+//  }
+  //  let result=demo()
+  //  document.write(result )   
+      
+  // let demo= (rate) =>{
+    // return rate+rate
+  // }
+  // document.write(demo(200))
+
+  // let demo = rate=>rate+rate 
+  // document.write(demo(300))
+
+    // let sum =(a,b,c)=> a+b+c +'<br>'
+
+    // document.write(sum(3,4,5))
+    // let demo=()=>{
+    // document.write("msge")
+// }
+    // 
+      // day 13 poush
+      // let x=10;
+      // let y="10;"
+
+      // if(x==y){
+        // document.write("both variables are same")
+      // }else{
+        // document.write("both are not same")
+      // }
+
+      // let x=10;
+      // let y=20;
+
+      // if(x>y){
+        // document.write("x is less than y")
+      // }else if(x<y){
+        // document.write("x is less than y")
+      // }else{
+        // document.write("both are same")
+      // }
+
+      // let value=50;
+      // if(value%2===0){
+        // document.write(`${value} is  even `)
+      // }else{
+        // document.write(`value is odd`)
+      // }
+
+      // leap year:366 days
+      // year/4 reminder:0 , year/100=no 0, year/400=0
+      // let year= 2000
+      // if (year%4==0&& 
+        // year%100 !=0 || year%400==0){
+          // document.write(`${year} is a leap year`)
+        // }
+        // else{
+          // document.write(`${year} is not a leap year`)
+        // }
+
+
+// for Day
+        // let x= new Date()
+        // let day =x.getDay()
+
+        // switch(day){
+          // case 0:
+            // document.write("sunday")
+            // break;
+            // case 1:
+            // document.write("monday")
+            // break;
+            // case 2:
+            // document.write("tuesday")
+            // break;
+            // case 3:
+            // document.write("wednesday")
+            // break;
+            // case 4:
+            // document.write("thursday")
+            // break;
+            // case 5:
+            // document.write("friday")
+            // break;
+            // case 6:
+            // document.write("saturday")
+            // break;
+            // default:
+              // document.write("Invalid Day Format")
+        // }
+
+        // ternary operator
+        // syntax
+            // condition? true /false
+        // let x=30
+        // let y=20
+        // x>y ? document.write("x is greater than y"): document.write("x is not greaater than y")
+          // loop
+          // for(let x=0;x<=10;x++){
+          //   document.write(x+'<br>')
+          // }
+          // for(let y=20;y>=1;y--){
+          //   document.write(y+`<br>`
+          // }
+          // // whileloop
+          // let p=0;
+          // while(p<=40){
+            // document.write(`${p} <br>`)
+            // p++
+          // }
+
+          // do while
+          // let i=0
+          // do{
+            // document.write(`${i} <br>`)
+            // i++
+          // }while(i<=10)
+
+
+
+          // nestedloop?
+        // 
+        // for(i=1; i<=6; i++){
+          // for(k=1; k<=i; k++){
+            // document.write(`*`)
+          // }
+          // document.write(`<br>`)
+        // }
+       
+        // for(i=1;i<=10;i++){
+        //   if(i==6){
+        //     break
+        //   }
+        //   document.write(i+`<br>`)
+        // }
+
+        // map 
+
+          // let car= ['bmw', 'ford', 'tesla', 'volkswagon']
+          // car.map(data=>{
+          //   document.write(data +`<br>`)
+          // })
+          
+            // reduce 
+            // const cart=[100, 200, 300, 400, 500, 600]
+            // const total= cart. reduce((first,last)=> 
+            // first+last)
+            //   document.write(total)
+        
+            
+
+        // Filter
+            // const cart=[100,200,300,400,500]
+            // const Dnew= cart.filter(value=> value>300)
+            // document.write(Dnew)
+
+
+            // call back function 
+          //
+          // const news=[
+          //     {title:"News title first", content:"This is first news content"},
+          //     {title:"News title second", content:"This is second news content"},
+          //     {title:"News title third", content:"This is third news content"},
+          // ]
+
+          // function showNews(){
+          //   setTimeout(() =>{
+          //     let result = ""
+          //     news.forEach(data=> 
+          //     result+=data.title
+          //     )
+          //   }, 3000);
+          // }
+
+          // showNews()
+
+          // function addNews(newData, callback){
+          //   setTimeout(()=>{
+          //     news.push(newData)
+          //   },4000)
+          // }
+
+          // addNews({title:"fourth Title", content:"This is fetch from callback"}, showNews)
+
+
+        // Promise 
+            // let p = new Promise((resolve, reject)=>{
+            //   let a = 1 + 1
+            //   if (a == 2){
+            //     resolve('success')
+            //   } else{
+            //     reject('failed')
+            //   }
+            // })
+
+
+            // p.then((message) => {
+            //   console.log('This is in the then' + message)
+            // }).catch((message) => {
+            //   console.log('This is in the catch' + message)
+            // })
+          
+              // sort 
+              // to make alphabets in order and number in according to ascending and descending order 
+              
+          
+          
+
+            
+              
+          
+
+    </script>
+
+    <!-- <button onclick= "demo()">click</button> -->
+    
+</body>
+</html>

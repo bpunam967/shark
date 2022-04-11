@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        const x=15
+        const y = 20
+        //document.write(`the value of x is '+ x +' and y is' -y)
+     document.write(`value of x is ${x} and y is ${y}<br>`)
+
+     document.write(`the sum of ${x} and ${y} is ${x+y} <br>`)
+
+     document.write (`${y%x} <br>`)
+     document.write(y*x +`<br>`)  
+     //concatnate
+    //String Methods
+
+    var a= true
+    var b=40
+    var c="4"
+        // typeof--- method: which is print the data type of varaible 
+    document.write(typeof(a))
+    document.write('<br>')
+    document.write(typeof(b))
+    document.write('<br>')
+    document.write(typeof(c))
+    document.write('<br>')
+    
+    document.write(b%b)
+    document.write('<br>')
+    // data types
+    // 1>String --- "ram","230"
+    // 2>Number --- 1239
+    // 3> Boolean --> True , False
+    // 4> Object
+    // 5> Array
+    
+
+
+    var msg="Hello Dreamian, Welcome to JS Program, Other programming Langauges are JS, Python, Ruby, C++, JAVA"
+
+    // 1. find the string length 
+
+        document.write(msg.length)
+        document.write('<br>')
+
+    //2. replace the word
+
+        document.write(msg.replace('JS','JavaScript'))
+        document.write('<br>')
+
+
+    document.write(msg.replace(/js/i,"JavaScript"))
+    document.write('<br>')
+
+    document.write(msg.replace(/js/gi, "JavaScript"))
+    
+    </script>
+
+
+</body>
+</html>
